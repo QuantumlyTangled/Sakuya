@@ -1,0 +1,24 @@
+{
+  "name": "sakuya",
+  "version": "1.0.0",
+  "description": "A bot for turning other bots ON on the VPS",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "github:hydrabolt/discord.js#master",
+    "klasa": "github:dirigeants/klasa#master"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuantumlyTangled/Sakuya.git"
+  },
+  "author": "QuantumlyTangled",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/QuantumlyTangled/Sakuya/issues"
+  },
+  "homepage": "https://github.com/QuantumlyTangled/Sakuya#readme"
+}
