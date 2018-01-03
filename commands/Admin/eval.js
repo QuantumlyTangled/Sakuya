@@ -1,6 +1,5 @@
 const { Command, Stopwatch } = require("klasa");
 const { inspect } = require("util");
-var Raven = require("raven");
 
 
 module.exports = class extends Command {
@@ -25,10 +24,6 @@ module.exports = class extends Command {
         if (!success) {
             if (result && result.stack) this.client.emit("error", result.stack);
             if (!silent) return msg.sendMessage(`${headers}\n${this.client.methods.util.codeBlock("js", result)}`);
-        }
-
-        if (!success) {
-            Raven.captureException(result.stack);
         }
 
         if (silent) return null;
@@ -68,7 +63,6 @@ module.exports = class extends Command {
             if (!syncTime) syncTime = stopwatch.friendlyDuration;
             if (thenable && !asyncTime) asyncTime = stopwatch.friendlyDuration;
             result = error;
-            Raven.captureException(error);
             success = false;
         }
 
