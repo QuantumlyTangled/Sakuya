@@ -19,4 +19,4 @@ class client extends Client {
 
 }
 
-new client().login("Mzk3NzUyMjYxMDIxMDA3ODcy.DS0jNQ.zL8r0BDGk9KlMi1-3BmXHOfCwj4");
+new client().login("");
